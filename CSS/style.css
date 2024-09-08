@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins'; 
+}
+
+/* Basic styling for the header */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffd000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #111827;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px 0;
+  }
+
+  .nav-menu ul.show {
+      display: flex;
+  }
+
+  .hamburger {
+      display: flex;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+  }
+}
+
+/* Header Style Ending */
+
+/* General styles for the hero section */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px; /* Increased padding for larger screens */
+  background-color: #fff; /* Background color */
+  color: #111827; /* Text color */
+  box-sizing: border-box;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px; /* Limit the width for readability */
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 700; /* Larger heading size */
+  margin-bottom: 15px;
+}
+
+.hero-text .highlight {
+  color: #ffd000; /* Highlight color */
+}
+
+.hero-text p {
+  font-size: 20px; /* Larger text size */
+  margin-bottom: 20px;
+}
+
+.signup-btn button {
+  padding: 15px 30px;
+  background-color: #ffd000; /* Button background color */
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #000; /* Button text color */
+  border-radius: 30px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth zoom-in effect */
+}
+
+.signup-btn button:hover {
+  transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+.signup-btn button a {
+  color: #000;
+  text-decoration: none;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 90%; /* Slightly smaller image */
+  height: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    padding: 10px;
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .signup-btn button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  
+  .signup-btn button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Hero Section Style Ending */
+
+  .testimonials-section {
+    width: 100%; /* Adjusted to full width */
+    max-width: 1300px; /* Maintain maximum width */
+    margin: 0 auto; /* Center the section */
+    padding: 40px 0;
+    background-color: #111827;
+    min-height: 300px; /* Ensure the section has an average size */
+  }
+  
+  .testimonials-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-item {
+    display: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonial-item.active {
+    display: block; /* Ensure the active testimonial is visible */
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  .section-heading .client {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .section-heading .testimonials {
+    color: #f3c702;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  
+  .testimonial-text {
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+    /* Optional: Add styling for responsiveness */
+    @media (max-width: 768px) {
+        .testimonial-text {
+            font-size: 1em;
+        }
+
+        .section-heading {
+            font-size: 1.5em;
+        }
+    }
+
+
+ 
+  
+    body {
+      font-family: 'poppins';
+      margin: 0;
+      padding: 0;
+      background-color: #ffd000;
+  }
+  
+  .blog-section {
+      padding: 40px;
+      background-color:#ffd000;
+      text-align: center;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight {
+    color: #111827; /* Change this to your desired color */
+    font-family: 'poppins'; /* Change this to your desired font */
+    font-style: italic;
+    font-weight: bold;
+}
+
+  .section-title {
+    font-weight: bold;
+      font-size: 48px;
+      margin-bottom: 30px;
+      color: white;
+  }
+  
+  .blog-post {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white; /* Yellow background color */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image {
+      width: 50%;
+      object-fit: cover;
+  }
+  
+  .blog-content {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .author-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .author-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      align-items: center;
+      /* padding-left: 4px; */
+      
+      /* margin-right: 40px; */
+      margin-left: 70px;
+      margin-bottom: 8px;
+  }
+  
+  .author-name {
+    padding-left: 12px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-weight: 500;
+      font-size: 17px;
+      color: #333;
+  }
+  
+  .blog-title {
+      /* margin: 0; */
+      padding-left: 15px;
+      /* padding-bottom: 40px; */
+      font-size: 1.8em;
+      color: #333;
+  }
+  
+  .blog-description {
+    padding-top: 20px;
+    padding: left 15px;
+      /* margin: 10px 0; */
+      color: #666;
+  }
+  
+/* Basic Reset and Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+
+.footer {
+  background-color: #111827; /* Dark background */
+  color: #FFFFFF; /* White text */
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding-left: 15px;
+  /* font-weight: bold; */
+}
+
+.footer-section h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.footer-section .studio {
+  color: #f3c702; /* Custom color for 'Studio' */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding-left: 15px ;
+  list-style: none;
+}
+
+.footer-section a {
+  color: #fffd00; /* Custom color for links */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  /* padding-left: 15px; */
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+}
