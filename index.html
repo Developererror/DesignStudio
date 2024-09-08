@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DesignStudio</title>
+</head>
+<body class="bg-gray-100">
+    <header class="main-header bg-gray-900 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="logo">
+              <h1 class="text-2xl font-bold">
+                <span class="text-white">Design</span><span class="text-yellow-400">Studio</span>
+              </h1>                            
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="flex items-center">
+                    <li><a href="#home" class="px-4 py-2 text-white hover:text-yellow-400">Home</a></li>
+                    <li><a href="#services" class="px-4 py-2 text-white hover:text-yellow-400">Services</a></li>
+                    <li><a href="#aboutus" class="px-4 py-2 text-white hover:text-yellow-400">About Us</a></li>
+                    <li><a href="#testimonials" class="px-4 py-2 text-white hover:text-yellow-400">Testimonials</a></li>
+                    <li><a href="#blogs" class="px-4 py-2 text-white hover:text-yellow-400">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.querySelector('ul').classList.toggle('show');
+        hamburger.classList.toggle('active');
+    });
+});
+    </script>
+      <!-- Header Ending -->
+
+      <!-- Hero Starting -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h2>Design<span class="highlight">Studio</span></h2>
+          
+          <p>"Explore DesignStudio: Your Ultimate All-in-One Graphic Design Toolkit - Unleash Your Creativity with Just One Click!"</p>
+          <div class="signup-btn">
+            <button><a href="signup.html">Sign Up</a></button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/herobggg.jpg" alt="Image">
+        </div>
+      </section>
+    <!-- Hero Ending -->
+    
+  <!-- services start -->
+  <section class="text-white bg-yellow-400 body-font" id="services">
+    <div class="container px-6 py-24 mx-auto">
+        <h1 class="pt-12 text-5xl font-semibold text-center">
+            Our <span class="text-gray-900 italic">Creative</span> ToolBox
+        </h1>    
+        <p class="leading-8 font-medium text-gray-900 text-lg text-center px-4 py-4 mb-0">
+            ~Discover our suite of innovative tools designed to elevate your creative projects. Whether you're looking to edit images, compress files, draw stunning designs, or convert text to files, our comprehensive toolkit provides all the features you need to bring your ideas to life with ease and precision. Explore our services and unlock your creative potential today!~
+        </p>
+    <div class="container px-10 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+
+          <a href="imageEditor.html">
+            <div class="p-4 md:w-1/4 lg:w-1/4">
+              <div class=" bg-white border-gray-800 rounded-lg overflow-hidden hover:scale-110 transition-transform hover:ease-in-out duration-700">
+                <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="images/imageEditor (2).jpg" alt="blog">
+                <div class="p-4">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-600 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-800 mb-3">Image Editor</h1>
+                  <p class="leading-relaxed mb-3 text-gray-700">Edit your images effortlessly. Unleash your creativity with just a few clicks!</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-yellow-600 inline-flex items-center md:mb-2 lg:mb-0"><a href="imageEditor.html" class="text-yellow-600">Learn More</a>
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-yellow-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-yellow-600 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="drawing.html">
+            <div class="p-4 md:w-1/4 lg:w-1/4">
+              <div class=" bg-white border-gray-800 rounded-lg overflow-hidden hover:scale-110 transition-transform hover:ease-in-out duration-700">
+                <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="images/drawing.jpg" alt="blog">
+                <div class="p-4">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-600 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-800 mb-3">Drawing Canvas</h1>
+                  <p class="leading-relaxed mb-3 text-gray-700">Draw, sketch, and create with our intuitive canvas. Your imagination is the limit!</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-yellow-600 inline-flex items-center md:mb-2 lg:mb-0"><a href="drawing.html" class="text-yellow-600">Learn More</a>
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-yellow-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-yellow-600 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a><a href="fileCompressor.html">
+            <div class="p-4 md:w-1/4 lg:w-1/4">
+              <div class=" bg-white border-gray-800 rounded-lg overflow-hidden hover:scale-110 transition-transform hover:ease-in-out duration-700">
+                <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="images/fileCompressor.jpg" alt="blog">
+                <div class="p-4">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-600 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-800 mb-3">File Compressor</h1>
+                  <p class="leading-relaxed mb-3 text-gray-700">Shrink your files, not your quality. Speed up your site in seconds.</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-yellow-600 inline-flex items-center md:mb-2 lg:mb-0"><a href="fileCompressor.html" class="text-yellow-600">Learn More</a>
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-yellow-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-yellow-600 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a><a href="textToFile.html">
+            <div class="p-4 md:w-1/4 lg:w-1/4">
+              <div class=" bg-white border-gray-800 rounded-lg overflow-hidden hover:scale-110 transition-transform hover:ease-in-out duration-700">
+                <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="images/textTofile.jpg" alt="blog">
+                <div class="p-4">
+                  <h2 class="tracking-widest text-xs title-font font-medium text-yellow-600 mb-1">CATEGORY</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-800 mb-3">Text To File</h1>
+                  <p class="leading-relaxed mb-3 text-gray-700">Turn your text into any file format instantly. Easy, fast, and hassle-free!</p>
+                  <div class="flex items-center flex-wrap">
+                    <a class="text-yellow-600 inline-flex items-center md:mb-2 lg:mb-0"><a href="textToFile.html" class="text-yellow-600">Learn More</a>
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span class="text-yellow-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                    <span class="text-yellow-600 inline-flex items-center leading-none text-sm">
+                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>6
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+  <!-- services end -->
+
+
+<!-- About starting --> 
+  <section class="bg-white py-12 px-6 lg:px-12"  id="aboutus" class="aboutus">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+              <h1 class="text-5xl font-bold text-gray-900 mb-4">
+                  Meet The <span class="text-yellow-400 italic ">TEAM</span>
+              </h1>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                  We are a dedicated team of professionals committed to delivering outstanding design solutions. Our team combines creativity, expertise, and a passion for innovation to provide top-notch services. From experienced designers to skilled developers, each member of our team plays a crucial role in making your vision a reality. Get to know us better and see how our teamwork can bring your ideas to life.
+              </p>
+          </div>
+      
+          <div class="w-full lg:w-1/2 flex justify-center">
+              <img src="images/meetTheteam.jpg" alt="Team Photo" class="w-full lg:w-auto h-auto rounded-lg shadow-lg">
+          </div>
+      </div>
+  </section>
+  <!-- About Ending -->
+
+
+ <!-- Testimonials Starting -->
+ <section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h1 class="section-heading">
+      <span class="client">Client</span> <span class="testimonials">Testimonials</span>
+    </h1>
+    <div class="testimonials-slider">
+      <div class="testimonial-item active">
+        <p class="testimonial-text">"DesignStudio's tools have completely transformed our workflow. The image editing app is incredibly intuitive!"</p>
+        <p class="testimonial-author">— Alex Johnson, Graphic Designer</p>
+      </div>
+      <div class="testimonial-item">
+        <p class="testimonial-text">"The text-to-file app is a game-changer. It's so easy to use and saves us tons of time!"</p>
+        <p class="testimonial-author">— Jamie Lee, Content Creator</p>
+      </div>
+      <div class="testimonial-item">
+        <p class="testimonial-text">"Exceptional service and quality. The image compressor is a must-have for anyone dealing with large files."</p>
+        <p class="testimonial-author">— Chris Kim, Photographer</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  let index = 0;
+const testimonials = document.querySelectorAll('.testimonial-item');
+const totalTestimonials = testimonials.length;
+
+function showNextTestimonial() {
+  testimonials[index].classList.remove('active');
+  index = (index + 1) % totalTestimonials;
+  testimonials[index].classList.add('active');
+}
+
+testimonials[index].classList.add('active');
+
+setInterval(showNextTestimonial, 4000);
+</script>
+<!-- testimonials ending -->
+
+
+<!-- Blog starting -->
+<section class="bg-white py-12 px-4 md:px-6 lg:px-12" id="blogs" id="blogs" class="blogs">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">
+      <span class="text-yellow-500">Featured</span> Blog Post
+  </h1>
+  <div class="flex flex-col md:flex-row items-center md:items-start justify-center space-y-8 md:space-y-0 md:space-x-8">
+      <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3">
+          <img src="images/blogs.jpg" alt="Blog Post Image" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <div class="flex-1 w-full md:w-1/2 lg:w-2/3">
+          <div class="flex items-center mb-4">
+              <img src="images/person 1.jfif" alt="Author Image" class="w-16 h-16 rounded-full mr-4">
+              <p class="text-lg font-semibold text-gray-800">John Doe, AI & Design Specialist</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">The Intersection of AI and Graphic Design</h2>
+          <p class="text-base md:text-lg text-gray-600 mb-4">
+              Artificial Intelligence is transforming the world of graphic design. Discover how AI tools are enhancing creativity, streamlining design processes, and providing new insights into design trends.
+          </p>
+          <!-- <a href="blog1.html" class="text-yellow-500 font-semibold hover:underline">See More Insights</a> -->
+      </div>
+  </div>
+</section>
+
+<!-- Blog ending -->
+
+<!-- footer starting -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h1>Design<span class="studio">Studio</span>
+      </h1>
+      <p>Explore DesignStudio: Your Ultimate All-in-One Graphic Design Toolkit - Unleash Your Creativity with Just One Click</p>
+    </div>
+    <div class="footer-section">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:info@example.com">Designstudio.com</a></li>
+        <li><a href="tel:+1234567890">+123 456 7890</a></li>
+        <li>University Road, Karachi, Pakistan</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h2>Follow Us</h2>
+      <ul class="social-media">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 DesignStudio. All rights reserved.</p>
+  </div>
+</footer>     
+</body>
+</html>
